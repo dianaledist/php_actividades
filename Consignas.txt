@@ -1,0 +1,37 @@
+Actividades PHP
+
+1) Actividad Calculadora
+Realiza una sencilla calculadora.
+Pon en una variable un número.
+Pon en otra variable un número.
+Suma y muestra el resultado.
+Realiza otras operaciones (Restar, dividir…).
+
+2) Actividad Meeting
+Guarda en una variable el nombre de una chica/o.
+Guarda en otra variable el nombre de una chica/o.
+Muestra la frase> “A {chico/a} le gusta { chico/a }.”
+Por ejemplo: A Sonia le gusta Roberto.
+Guarda en dos variables un nombre y un año de nacimiento. Muestra la siguiente frase calculando la
+edad: “Me llamo {nombre} y nací el {año de nacimiento}. Por lo tanto tengo 23.”
+
+3) Actividad Impuestos
+Guarda un número.
+Calcula el IVA de esa cifra.
+Muestra la misma cifra con IVA añadido.
+Pista: Para calcular el IVA debes aplicar la siguiente formula precio *0.21.
+Muestra además la cifra sin iva.
+
+4) Crear un programa que introduzca en una variable la cantidad de kilómetros recorridos por una motocicleta y en otra la cantidad de litros de combustible que consumió durante ese recorrido. Mostrar el consumo de combustible por kilómetro.
+
+5) Crear un programa que introduzca de una temperatura en escala Fahrenheit y le muestre el
+equivalente en grados Celsius. La fórmula de conversión que se usa para este cálculo es: _Celsius = (5/9) * (Fahrenheit-32)_
+
+6)Crear un programa que recoja tres números en variables para luego mostrarle el promedio de los tres. 
+
+7) Crear un programa que realice la división de dos números y redondee el resultado a la baja y a la alta
+(utilizar funciones matemáticas)
+
+8) Crear un programa que nos calcule el área y el perímetro de un circulo (utilizar PI en funciones matemáticas)
+
+
