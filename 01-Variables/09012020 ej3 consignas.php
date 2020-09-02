@@ -14,7 +14,6 @@
 <body class="container-fluid">
     <h1>Actividades usando lenguaje PHP</h1>
     
-    
     <h2>Consigna 1</h2>
     <p>Realiza una sencilla calculadora.</p>
     <li>Pon en una variable un número.</li>

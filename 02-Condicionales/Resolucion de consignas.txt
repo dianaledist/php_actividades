@@ -1,0 +1,78 @@
+Actividades utilizando lenguaje PHP
+1) Logicando la lógica
+Dime en cada caso si entraría el condicional.
+1
+if (True && True)		TRUE
+2
+if (False && True)		FALSE
+3
+if (1 == 1 && 2 == 1) 		FALSE
+4
+if ("test" == "test")		TRUE
+5
+if (1 == 1 || 2 != 1)		TRUE
+6
+if (True && 1 == 1)		TRUE
+7
+if (False && 0 != 0)		FALSE
+8
+if (True || 1 == 1)		TRUE
+9
+if ("test" == "testing")		FALSE
+10
+if (1 != 0 && 2 == 1)		FALSE
+11
+if ("test" != "testing")		TRUE
+12
+if ("test" == 1)			FALSE
+13
+if (!(True && False))		TRUE
+14
+if (!(1 == 1 && 0 != 1))	FALSE
+15
+if (!(10 == 1 || 1000 == 1000))	FALSE
+16
+if (!(1 != 10 || 3 == 4))	FALSE
+17
+if (!("testing" == "testing" && "Zed" == "Cool Guy"))	FALSE
+18
+if (1 == 1 && (!("testing" == 1 || 1 == 0)))			TRUE
+19
+if ("chunky" == "bacon" && (!(3 == 4 || 3 == 3)))		FALSE
+20
+if (3 == 3 && (!("testing" == "testing" || "PHP" == "Fun")))		FALSE
+
+2) Actividad 2-2 (Portero de discoteca automático)
+Recoge el año de nacimiento.
+Calcula la edad.
+Si es mayor de edad, dile que puede pasar dentro.
+Si es menor, tírale.
+Si tiene más de 65 años, dile que es demasiado mayor para entrar.
+
+3) Actividad 2-3
+Escribe un programa que recoga en una variable si es culpable o no. Asumiremos que:
+En caso afirmativo el usuario responderá si
+En caso contrario responderá no.
+Si el usuario responde si se escribirá por el documento «irás a la cárcel».
+Si el usuario responde no se escribirá por el documento web «irás a casa».
+En cualquier caso en el documento web se escribirá «la documentación por favor».
+4) Actividad 2-4
+Escribe un programa que responda a un usuario que quiere comprar un helado en una conocida marca de comida rápida cuanto le costará en función del topping que elija.
+El helado sin topping cuesta 1.90€.
+El topping de oreo cuesta 1€.
+El topping de KitKat cuesta 1.50€.
+El topping de brownie cuesta 0.75€.
+El topping de lacasitos cuesta 0.95€.
+En caso de no disponer del topping solicitado por el usuario el programa escribirá por pantalla «no tenemos este topping, lo sentimos. » y a continuación informar del precio del helado sin ningún topping.
+Finalmente, el programa escribe por pantalla el precio del helado con el topping seleccionado (o ninguno).
+
+5) Actividad 2-5
+Escribe un programa que ayude a una empresa a incrementar los salarios de los trabajadores de la siguiente manera:
+Tipo de salario %
+De 0 a 500€ 20%
+De 501€ a 1000€ 10%
+De 1001€ a 1500€ 5%
+Más de 1500€ 3%
+Sacar por pantalla el sueldo con incremento que hemos recogido en una variable
+
+
