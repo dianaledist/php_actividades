@@ -96,18 +96,43 @@
             $tirada[$i]=$valor;
             echo "Dado Nº: ".$i.". Ha salido el valor ".$valor."<br>";
         }
+        ?>
+    </div>
 
+    <hr/>
 
-    /*         $dados=array();
-            $valor=array();
+    <h2>Consigna 5</h2>
+    <p>MATRIZ BIDIMENSIONAL</p>
+    <p>Crear una matriz bidimensional donde las filas son los alumnos y las columnas son las notas de las asignaturas. Serán 4 alumnos con 6 asignaturas. Mostrar por pantalla:</p>
+ <li>Matriz completa</li>
+ <li>Media de notas por alumno</li>
+ <li>Media de notas por asignatura</li>
+ <li>Indicar el alumno con la media mas alta y mas baja ( su numero de fila)</li>
+ <li>Indicar la asignatura con la media mas alta y mas baja ( su numero de columna)</li>
+  
+    <div class="container">
+        <h4>Resolución</h4>
+        <?php
+            $estudiante=array(
+                array(5,6,8,6,9,10),
+                array(8,7,9,8,10,8),
+                array(7,5,9,10,8,6),
+                array(9,10,9,10,10,9)
+            );
 
-            $tirada=array($dados=>$valor);
-            for ($i=2;$i<8;$i++) {
-                
-                echo "Dado Nº".$dados[array_rand($dados)];
+            for ($row = 0; $row<3; $row++) {
+                echo "<ul>";
+                for ($col = 0; $col < 8; $col++) {
+                echo "<li>".$estudiante[$row][$col]."</li>";
+                }
+                echo "</ul>";
             }
+           
+           
+          /*   echo $estudiante[0][0]." Nota ".$estudiante[0][1]." Nota ".$estudiante[0][2]." Nota ".$estudiante[0][3]." Nota ".$estudiante[0][4]." Nota ".$estudiante[0][5]." Nota ".$estudiante[0][6].".<br>";
+           echo $estudiante[1][0]." Nota ".$estudiante[1][1]." Nota ".$estudiante[1][2]." Nota ".$estudiante[1][3]." Nota ".$estudiante[1][4]." Nota ".$estudiante[1][5]." Nota ".$estudiante[1][6].".<br>"; */
 
-            /* echo "La cantidad de dados es ".$dados[array_rand($dados)]." y sus valores son ".$valor[array_rand($valor)] */ 
+        
         ?>
     </div>
 
