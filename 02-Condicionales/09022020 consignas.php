@@ -142,6 +142,104 @@
 
     <hr/>
 
+    <h2>Consigna 5</h2>
+    <p>Jugando con bucles!
+    <li>1) Imprime los números del 1 al 10.</li>
+    <li>2) Imprime los números de 60 al 70.</li>
+    <li>3) Imprime los números del 20 al 1.</li>
+    <li>4) Imprime la tabla del 5 con este formato: 5 x 3 = 15</li>
+    <li>5) Suma los números del 1 al 100.</li>
+
+    <div class="container">
+        <h4>Resolución</h4>
+        <?php
+        echo "1) ";
+            for ($i=1;$i<=10;$i++) {
+                echo $i." ";
+            }
+        echo "<br>";
+        echo "2) ";
+        for ($i=60;$i<=70;$i++) {
+            echo $i." ";
+        }
+        echo "<br>";
+        echo "3) ";
+        for ($i=20;$i>=1;$i--) {
+            echo $i." ";
+        }
+        echo "<br>";
+        $tabla=5;
+        echo "4) Tabla de multiplicar de $tabla: <br>";      
+        for ($i=1;$i<=10;$i++) {
+            echo $tabla." x ".$i ." = ".($tabla*$i)."<br>";
+        }
+        echo "<br>";
+        echo "5) ";
+        $total=0;
+        for ($i=1;$i<=100;$i++) {
+            $total+=$i;
+            echo $total." ";
+        }
+        ?>
+    </div>
+    <hr/>
+
+    <h2>Consigna 6</h2>
+    <p>Escriba un programa que con dos números enteros y escriba qué números son pares y cuáles
+impares desde el primero hasta el segundo.</p>
+
+    <div class="container">
+        <h4>Resolución</h4>
+        <?php
+            $n1=45;
+            $n2=70;
+            echo "Los números pares entre $n1 y $n2 son ";
+            for ($i=$n1;$i<=$n2;$i++) {                
+                if ($i%2==0) {                    
+                    echo $i." ";
+                }
+
+            }
+        ?>
+    </div>
+
+    <hr/>
+
+    <h2>Consigna 7</h2>
+    <p>Escriba un programa que coja un número entero mayor que cero y que escriba sus divisores.</p>
+
+    <div class="container">
+        <h4>Resolución</h4>
+        <?php
+            $num=25;
+            echo "Los divisores de $num son ";
+            for ($i=1;$i<=$num;$i++) {
+                if ($num%$i==0) {
+                    echo $i." ";
+                }
+            }
+        ?>
+    </div>
+
+    <hr/>
+
+    <h2>Consigna 8</h2>
+    <p>Escriba un programa que coja un número entero mayor que 1 y que escriba si el número es un número primo o no.</p>
+
+    <div class="container">
+        <h4>Resolución</h4>
+        <?php
+            $num=25;
+            if ($num%$num || $num%1) {
+                echo 
+            }
+        ?>
+    </div>
+
+    <hr/>
+
+    
+
 </body>
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
