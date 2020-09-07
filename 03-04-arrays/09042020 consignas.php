@@ -120,13 +120,36 @@
                 array(9,10,9,10,10,9)
             );
 
-            for ($row = 0; $row<3; $row++) {
+            $sumaEstudiante=0;
+            $mediaNotaEstudiante=array(0,0,0,0);
+
+            $mediaNotaAsignatura=array(0,0,0,0,0,0);
+
+
+            for ($i=0;$i<count($estudiante);$i++)
+            {
+                for ($j=0;$j<count($estudiante[$i]);$j++)
+                {
+                    echo "<p>Estudiante ".$i." - Asignatura: ".$j." - Nota: ".$estudiante[$i][$j]." </p>";
+                    $sumaEstudiante=array_sum($estudiante[$i]);
+                }
+                $mediaNotaEstudiante[$i]=$sumaEstudiante/count($estudiante[$i]);
+                echo "<p> La promedio de todas las asignaturas cursadas es ".round($mediaNotaEstudiante[$i],PHP_ROUND_HALF_UP)."</p> <hr>";
+            }
+
+            $notaPromedioMax=array_keys($mediaNotaEstudiante,max($mediaNotaEstudiante));
+            $notaPromedioMin=array_keys($mediaNotaEstudiante,min($mediaNotaEstudiante));
+            echo "<p> La nota media más alta es ".max($mediaNotaEstudiante)." que pertenece al estudiante ".$notaPromedioMax[0]."</p>";
+            echo "<p> La nota media más baja es ".round(min($mediaNotaEstudiante),PHP_ROUND_HALF_UP)." que pertenece al estudiante ".$notaPromedioMin[0]."</p>";
+
+
+           /*  for ($row = 0; $row<4; $row++) {
                 echo "<ul>";
-                for ($col = 0; $col < 8; $col++) {
+                for ($col = 0; $col < 6; $col++) {
                 echo "<li>".$estudiante[$row][$col]."</li>";
                 }
-                echo "</ul>";
-            }
+                echo "</ul>";                
+            } */
            
            
           /*   echo $estudiante[0][0]." Nota ".$estudiante[0][1]." Nota ".$estudiante[0][2]." Nota ".$estudiante[0][3]." Nota ".$estudiante[0][4]." Nota ".$estudiante[0][5]." Nota ".$estudiante[0][6].".<br>";
