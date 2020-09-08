@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formularios</title>
+    <title>Formulario de contact</title>
 
  	   
 <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
@@ -12,19 +12,18 @@
 
 </head>
 <body class="container-fluid">
-    
-<?php 
+    <h1>Actividades usando lenguaje PHP</h1>
+    <h2>Formulario de contacto</h2>
 
-$respuesta=mb_strtolower($_POST['respuesta']);
-    if ($respuesta=="tiempo") {
-        echo "Has acertado, era Tiempo";
-    } else {
-        echo "No has acertado, era 'Tiempo'... Te como!";
-    }
-    
+    <form action="Formulariobbdd.php" method="post">
+        <label>Ingrese su nombre</label><input type="text" name="name"><br>
+        <label>Ingrese su teléfono</label><input type="number" name="day"><br>
+        <label>Ingrese su email</label><input type="email" name="month"><br>
+        <label>Escriba su mensaje</label><input type="text" name="mensaje"><br>
+        <input type="submit" name="submit" value="Enviar"><br>        
+    </form>
 
-?> 
-
+  
 </body>
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
