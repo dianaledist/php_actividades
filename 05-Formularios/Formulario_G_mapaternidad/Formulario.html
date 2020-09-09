@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formularios</title>
+    <title>Formulario de mapaternidad</title>
 
  	   
 <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
@@ -12,38 +12,24 @@
 
 </head>
 <body class="container-fluid">
-    
-<?php 
+  
+    <form action="Formulariobbdd.php" method="post">
+        <h1>Test de la mapaternidad</h1>
+        <label><h3>Ingrese su nombre</h3></label><input type="text" name="nombre" id=""><br>
+        <label><h3>Ingrese su género</h3></label>
 
-$day=$_POST["day"];
-$month=$_POST["month"];
-$year=$_POST['year'];
-
-if(isset($_POST["enviar"])) 
-{
-    if($day=="*" || $month=="*" || $year=="*")
-        {
-            echo "Debe ingresar una fecha de nacimiento completa";
-        }
-        else 
-        {
-            if ($year>1920 && $year<=2020)
-            {
-                echo "Ha nacido el día ".$day." del mes de ".$month." del año ".$year; 
-            }
-            else 
-            {
-                echo "Ingrese un año de nacimiento correcto";
-            }
-            
-        }
-
-}
+        <select name="genero">
+            <option value="*">Elegir género</option>
+            <option value="femenino">Femenino</option>
+            <option value="masculino">Masculino</option>
+            <option value="otro">Otro</option>
+        </select><br>
 
 
-
-?> 
-
+        <label><h3>Ingrese cantidad de hijxs</h3></label><input type="number" name="hijxs" id=""><br>
+        <input type="submit" name="enviar" value="Enviar">
+    </form>
+  
 </body>
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">

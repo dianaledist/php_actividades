@@ -15,32 +15,36 @@
     
 <?php 
 
-$day=$_POST["day"];
-$month=$_POST["month"];
-$year=$_POST['year'];
+$nombre=$_POST['nombre'];
+$genero=$_POST['genero'];
+$hijxs=$_POST['hijxs'];
 
 if(isset($_POST["enviar"])) 
 {
-    if($day=="*" || $month=="*" || $year=="*")
+    if(empty($nombre) || empty($genero))
+    {
+        echo "Ingrese todos los datos de forma completa";
+    }
+    else 
+    {
+        if ($hijxs<0)
         {
-            echo "Debe ingresar una fecha de nacimiento completa";
+            echo "No puede ingresar una cantidad de personas negativa";
         }
+        elseif ($hijxs==0)
+        {
+            echo "La persona ".$nombre." de género ".$genero." no tiene hijxs";
+        }
+        elseif ($hijxs==1)
+        {
+            echo "La persona ".$nombre." de género ".$genero." tiene ".$hijxs." hijx";
+        }        
         else 
         {
-            if ($year>1920 && $year<=2020)
-            {
-                echo "Ha nacido el día ".$day." del mes de ".$month." del año ".$year; 
-            }
-            else 
-            {
-                echo "Ingrese un año de nacimiento correcto";
-            }
-            
+            echo "La persona ".$nombre." de género ".$genero." tiene ".$hijxs." hijxs a su cargo";
         }
-
+    }
 }
-
-
 
 ?> 
 
