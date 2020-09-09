@@ -15,21 +15,60 @@
   
     <form action="Formulariobbdd.php" method="post">
         <h1>Formulario de inscripción</h1>
-        <label><h3>Nombre:</h3></label><input type="text" name="nombre"><br>
-        <input type="radio" name="genero" value="F"><label>Femenino</label><br>
-        <input type="radio" name="genero" value="M"><label>Masculino </label><br>
-        <input type="radio" name="genero" value="Other"><label>Otro </label><br>
-        <label><h3>Aficiones</h3></label> <br>
-        <input type="checkbox" name="lectura"><label>Lectura</label><br>
-        <input type="checkbox" name="deporte"><label>Deporte</label><br>
-        <input type="checkbox" name="cine"><label>Cine</label><br>
-        <select name="horario">
-            <option value="*">Elegir un horario</option>
-            <option value="1">Turno mañana</option>
-            <option value="2">Turno tarde</option>
-            <option value="3">Turno noche</option>
-        </select>
-        <input type="submit" name="enviar" value=Enviar>
+        <label>Seleccione su día de nacimiento</label>
+        <select name="day"> 
+            <option selected hidden value="*">Día</option>
+            <option value="1">1</option> 
+            <option value="2">2</option> 
+            <option value="3">3</option> 
+            <option value="4">4</option> 
+            <option value="5">5</option> 
+            <option value="6">6</option> 
+            <option value="7">7</option> 
+            <option value="8">8</option> 
+            <option value="9">9</option> 
+            <option value="10">10</option> 
+            <option value="11">11</option> 
+            <option value="12">12</option> 
+            <option value="13">13</option> 
+            <option value="14">14</option> 
+            <option value="15">15</option> 
+            <option value="16">16</option> 
+            <option value="17">17</option> 
+            <option value="18">18</option> 
+            <option value="19">19</option> 
+            <option value="20">20</option> 
+            <option value="21">21</option> 
+            <option value="22">22</option> 
+            <option value="23">23</option> 
+            <option value="24">24</option> 
+            <option value="25">25</option> 
+            <option value="26">26</option> 
+            <option value="27">27</option> 
+            <option value="28">28</option> 
+            <option value="29">29</option> 
+            <option value="30">30</option> 
+            <option value="31">31</option> 
+        </select><br>
+        <label>Seleccione su mes de nacimiento </label>
+        <select name="month">
+            <option selected hidden value="*">Mes</option> 
+            <option value="Enero">Enero</option> 
+            <option value="Febrero">Febrero</option> 
+            <option value="Marzo">Marzo</option> 
+            <option value="Abril">Abril</option> 
+            <option value="Mayo">Mayo</option> 
+            <option value="Junio">Junio</option> 
+            <option value="Julio">Julio</option> 
+            <option value="Agosto">Agosto</option> 
+            <option value="Septiembre">Septiembre</option> 
+            <option value="Octubre">Octubre</option> 
+            <option value="Noviembre">Noviembre</option> 
+            <option value="Diciembre">Diciembre</option> 
+        </select><br>
+        <label>Ingrese su año de nacimiento</label>
+        <input type="number" name="year"><br>
+        <input type="submit" name="enviar" value="Enviar">
     </form>
   
 </body>

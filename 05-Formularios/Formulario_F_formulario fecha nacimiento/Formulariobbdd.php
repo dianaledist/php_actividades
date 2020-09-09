@@ -15,85 +15,31 @@
     
 <?php 
 
-$nombre=$_POST["nombre"];
-$genero=$_POST["genero"];
+$day=$_POST["day"];
+$month=$_POST["month"];
+$year=$_POST['year'];
 
-if(empty($_POST["lectura"]))
-    {
-        $lectura="off";
-    }
-    else 
-    {
-        $lectura=$_POST["lectura"];
-    }
-
-if(empty($_POST["deporte"]))
-    {
-        $deporte="off";
-    }
-    else 
-    {
-        $deporte=$_POST["deporte"];
-    }
-
-if(empty($_POST["cine"]))
-    {
-        $cine="off";
-    }
-    else 
-    {
-        $cine=$_POST["cine"];
-    }
-
-
-$horario=$_POST["horario"];
-
-if(isset($_POST["enviar"]))
+if(isset($_POST["enviar"])) 
 {
-    if(!empty($nombre) && !empty($genero) && !empty($horario))
-    {
-        $nombre=trim($nombre);
-        var_dump($nombre);
-        if($horario=="*")
+    if($day=="*" || $month=="*" || empty($year))
         {
-            echo "No se ha definido ningún horario";
+            echo "Debe ingresar una fecha de nacimiento completa";
         }
         else 
         {
-            echo "Nombre: ".$nombre."<br>";
-            echo "Género: ".$genero."<br>";
-            if ($lectura=="on")
+            if ($year>1920 && $year<=2020)
             {
-                echo "Le gusta leer <br>";
+                echo "Ha nacido el día ".$day." del mes de ".$month." del año ".$year; 
             }
-            if($deporte=="on")
+            else 
             {
-                echo "Le gusta el deporte<br>";
+                echo "Ingrese un año de nacimiento correcto";
             }
-            if($cine=="on")
-            {
-                echo "Le gusta el cine <br>";
-            }
-            switch($horario)
-            {
-                case 1:
-                    echo "Le interesa la mañana";
-                break;
-                case 2:
-                    echo "Le interesa la tarde";
-                break;
-                case 3:
-                    echo "Le interesa la noche";
-                break;
-            }
+            
         }
-        
-    }
-    else
-    {
-        echo "Faltan datos";
-    }
+
 }
+
 
 
 ?> 
