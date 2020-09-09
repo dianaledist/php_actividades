@@ -12,17 +12,25 @@
 
 </head>
 <body class="container-fluid">
-    <h1>Actividades usando lenguaje PHP</h1>
-    <h2>Formulario de contacto</h2>
-
+  
     <form action="Formulariobbdd.php" method="post">
-        <label>Ingrese su nombre</label><input type="text" name="name"><br>
-        <label>Ingrese su teléfono</label><input type="number" name="day"><br>
-        <label>Ingrese su email</label><input type="email" name="month"><br>
-        <label>Escriba su mensaje</label><input type="text" name="mensaje"><br>
-        <input type="submit" name="submit" value="Enviar"><br>        
+        <h1>Formulario de inscripción</h1>
+        <label><h3>Nombre:</h3></label><input type="text" name="nombre"><br>
+        <input type="radio" name="genero" value="F"><label>Femenino</label><br>
+        <input type="radio" name="genero" value="M"><label>Masculino </label><br>
+        <input type="radio" name="genero" value="Other"><label>Otro </label><br>
+        <label><h3>Aficiones</h3></label> <br>
+        <input type="checkbox" name="lectura"><label>Lectura</label><br>
+        <input type="checkbox" name="deporte"><label>Deporte</label><br>
+        <input type="checkbox" name="cine"><label>Cine</label><br>
+        <select name="horario">
+            <option value="*">Elegir un horario</option>
+            <option value="1">Turno mañana</option>
+            <option value="2">Turno tarde</option>
+            <option value="3">Turno noche</option>
+        </select>
+        <input type="submit" name="enviar" value=Enviar>
     </form>
-
   
 </body>
 
