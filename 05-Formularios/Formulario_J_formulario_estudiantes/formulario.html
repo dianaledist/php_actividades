@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+</head>
+
+	<body>
+	<form action="formulariobbdd.php" method="post">
+	<h1> Software para gestionar datos </h1>
+	<h4> Datos de estudiantes </h4>
+	<p>Estudiantes en base de datos: 
+		<li>Diana</li>
+		<li>Saul</li>
+		<li>Dani</li>
+		<li>Sergio</li>
+	</p>
+	<select name="opcion">
+		<option select hidden value="0"> Elige una opción </option>
+		<option value="1"> Alta estudiante </option>
+		<option value="2"> Baja estudiante </option>
+		<option value="3"> Modificar nota asignatura </option>
+		<option value="4"> Media nota estudiante </option>
+		<option value="5"> Mostrar tabla notas </option>
+
+
+	
+	</select>
+	<br><br>
+	<label>Ingreso de datos de estudiante</label><input type="text" name="ingreso"><br>
+
+	<p><strong> Notas de asignaturas</strong> </p>
+	<label>Asignatura: Matemática</label><input type="number" name="matematica" min="0" max="10" value="0"><br>
+	<label>Asignatura: Filosofía</label><input type="number" name="filosofia" min="0" max="10" value="0"><br>
+	<label>Asignatura: Lengua</label><input type="number" name="lengua" min="0" max="10" value="0"><br>
+	<label>Asignatura: Fisica</label><input type="number" name="fisica" min="0" max="10" value="0"><br>
+	<label>Asignatura: Arte</label><input type="number" name="arte" min="0" max="10" value="0"><br>
+	
+	<input type="submit" value="Enviar" name="enviar">
+  </form>
+ </body>
+
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</html>

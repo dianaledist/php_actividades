@@ -18,6 +18,33 @@
 $nombre=$_POST["nombre"];
 $genero=$_POST["genero"];
 
+$lectura=isset($_POST["lectura"]);
+$lectura=isset($_POST["deporte"]);
+$lectura=isset($_POST["cine"]);
+
+
+function comprobar ($formulario) //variable formal
+{
+$aficion=""; //variable local
+if(empty($formulario))
+    {
+        $aficion="off";
+    }
+    else 
+    {
+        $aficion=$formulario;
+    }
+    return $aficion;
+}
+
+$lectura=comprobar($_POST["lectura"]); // variable real
+$deporte=comprobar($_POST["deporte"]);
+$cine=comprobar($_POST["cine"]);
+
+
+
+
+
 if(empty($_POST["lectura"]))
     {
         $lectura="off";
@@ -44,6 +71,8 @@ if(empty($_POST["cine"]))
     {
         $cine=$_POST["cine"];
     }
+
+
 
 
 $horario=$_POST["horario"];

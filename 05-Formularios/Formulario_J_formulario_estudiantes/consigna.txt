@@ -1,0 +1,14 @@
+Una academia donde se va a realizar la gestión de los alumnos
+Se debe presentar en una lista desplegable las siguientes opciones
+Alta de alumno
+Baja de alumno
+Modificación de nota de una asignatura
+Media de la nota de un alumno
+Mostrar la tabla de notas
+Se debe implementar los campos necesarios para realizar estas opciones
+Cada alumno tendrá su nombre y una tabla con las notas de 5 asignaturas
+Ejemplo
+Maria -->5,4,3,9,1
+Pepe-->5,3,7,3,5
+Rita-->6,4,8,9,4
+Las notas serán de 0 a 10.
